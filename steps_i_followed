@@ -1,0 +1,17 @@
+- generate a welcome controller
+
+- welcome: create index action and also the index view
+
+- update the routes.rb file with welcome#index as root
+
+- generate articles controller
+
+- declare a REST resource 
+  -resource :articles 
+  -can now confirm by running rake routes
+
+- articles: create index action and view
+
+- add a link 'goto articles' in the welcome index view which links to articles_path (this is articles/index)
+
+-  
