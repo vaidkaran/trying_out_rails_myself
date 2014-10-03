@@ -44,7 +44,9 @@ IMPORTANT POINTS
   - @article.save
   - redirect_to @article (will goto show action)
 
-
+- articles: create show action and view
+  - create article object with the params[:id] in show action
+  - create a link to index in view to show all articles
 
 
 
