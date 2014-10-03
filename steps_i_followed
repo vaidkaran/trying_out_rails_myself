@@ -1,3 +1,16 @@
+######################################
+IMPORTANT POINTS
+######################################
+- form submission makes a default POST request, so the url: articles_path will go to the create action (and not index)
+
+- redirect_to makes a new request. render just renders another view
+
+- redirect_to @article will by default goto the show action
+######################################
+
+
+
+
 - generate a welcome controller
 
 - welcome: create index action and also the index view
@@ -7,11 +20,40 @@
 - generate articles controller
 
 - declare a REST resource 
-  -resource :articles 
-  -can now confirm by running rake routes
+  - resource :articles 
+  - can now confirm by running rake routes
 
 - articles: create index action and view
 
 - add a link 'goto articles' in the welcome index view which links to articles_path (this is articles/index)
 
--  
+- create a link to create new article in articles/index 
+
+- generate article model with the appropriate db fields
+
+- articles: create 'new' action and view
+
+- a form to create a new article in articles/new
+  - article submits to create action
+
+- articles: create 'create' action
+  - can show the params received after form submission by putting "render plain: params[:article].inspect" in articles create action
+
+- articles create action: save the article params in the db
+  - make a new Article object(@article) while passing the params in the constructor in the form of strong params(strong params method should be private)
+  - @article.save
+  - redirect_to @article (will goto show action)
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
