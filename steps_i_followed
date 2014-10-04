@@ -48,11 +48,14 @@ IMPORTANT POINTS
   - create article object with the params[:id] in show action
   - create a link to index in view to show all articles
 
+- create a link from article/show to articles/index
+  - write the code to list all the articles in articles/index 
 
-
-
-
-
+- add validation to article
+  - add validation code to article model
+  - update article#create action to: if @article.save is a success go to show all articles else goback to the new artile page which would list the errors
+  - update the article/new to show the errors
+  - create a new @article object in article#new action
 
 
 
