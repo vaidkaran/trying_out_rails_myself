@@ -57,7 +57,7 @@ IMPORTANT POINTS
   - update the article/new to show the errors
   - create a new @article object in article#new action
 
-
+- article: create edit action and view
 
 
  

@@ -3,6 +3,10 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
+  def edit
+    @article = Article.new params[:id]
+  end
+
   def new
     @article = Article.new
   end
