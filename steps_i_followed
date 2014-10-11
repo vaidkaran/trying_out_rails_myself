@@ -6,6 +6,10 @@ IMPORTANT POINTS
 - redirect_to makes a new request. render just renders another view
 
 - redirect_to @article will by default goto the show action
+
+- _form has form_for @article (No url mentioned) and this form is used in both new and edit actions. Rails can infer which url to hit from @article because Articles is a resource. This is resourceful routes.
+  - @article goes to update action in case of the edit form
+  - @article goes to create action in case of new form
 ######################################
 
 
@@ -59,6 +63,12 @@ IMPORTANT POINTS
 
 - article: create edit action and view
 
+- use partial in 'new' and 'edit'
+  - create partial _form
+  - render the same _form in both new and edit
 
+- create update action in the controller
+  - the edit form will get submitted to the update action in controller.
+  - @article.update method with all the params(article_params -- permitted title and body) will be used to update the article in the db
  
 
