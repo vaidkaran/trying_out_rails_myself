@@ -71,4 +71,22 @@ IMPORTANT POINTS
   - the edit form will get submitted to the update action in controller.
   - @article.update method with all the params(article_params -- permitted title and body) will be used to update the article in the db
  
+- generate controller comments
+
+- generate model comments with article:references
+
+- add has_many :comments in article model
+
+- add a template to write comments in article show.html.erb
+
+
+
+
+
+
+
+
+
+
+
 
